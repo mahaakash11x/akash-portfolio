@@ -23,7 +23,7 @@ export default function Home() {
       </section>
 
       {/* Experience Section */}
-      <section className="section" id="experience" style={{ background: 'rgba(5, 5, 5, 0.8)' }}>
+      <section className="section" id="experience">
         <h2 className="section-title" style={{ textAlign: 'center' }}>Work Experience</h2>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', maxWidth: '1000px', margin: '0 auto', width: '100%' }}>
           
@@ -83,23 +83,29 @@ export default function Home() {
           </div>
 
           <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 600 }}>AllRounder & Biyeco</h3>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 600 }}>AllRounder</h3>
             <p style={{ color: 'var(--accent-color)', fontSize: '0.9rem' }}>React Native, TypeScript</p>
-            <p style={{ color: 'var(--text-secondary)' }}>Social Media and Matchmaking mobile applications with interactive UI elements and navigation workflows.</p>
+            <p style={{ color: 'var(--text-secondary)' }}>Social Media mobile application with interactive UI elements and navigation workflows.</p>
+          </div>
+
+          <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 600 }}>Biyeco</h3>
+            <p style={{ color: 'var(--accent-color)', fontSize: '0.9rem' }}>React Native, TypeScript</p>
+            <p style={{ color: 'var(--text-secondary)' }}>Matchmaking mobile application with interactive UI elements and navigation workflows.</p>
           </div>
 
         </div>
       </section>
 
       {/* Skills Section */}
-      <section className="section" id="skills" style={{ background: 'rgba(5, 5, 5, 0.8)' }}>
+      <section className="section" id="skills">
         <h2 className="section-title" style={{ textAlign: 'center' }}>Skills & Education</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '2rem', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
           
           <div className="glass-panel" style={{ padding: '2rem' }}>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '1rem', color: 'var(--accent-color)' }}>Technical Skills</h3>
             <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'inside', lineHeight: '1.8' }}>
-              <li><strong>Frontend:</strong> React Native, React.js, Next.js, TypeScript, Tailwind CSS</li>
+              <li><strong>Frontend & Mobile Development:</strong> React Native, React.js, Next.js, TypeScript, Tailwind CSS</li>
               <li><strong>Backend & DB:</strong> Node.js, Express.js, MySQL, MongoDB, Prisma</li>
               <li><strong>Other:</strong> SAPUI5, SAP Fiori, Git, Postman, Android Studio</li>
               <li><strong>Languages:</strong> JavaScript, C, C++, Java</li>
