@@ -1,0 +1,46 @@
+'use client';
+
+import { useRef } from 'react';
+import * as THREE from 'three';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { Points, PointMaterial, Preload } from '@react-three/drei';
+// @ts-expect-error - missing types for maath module
+import * as random from 'maath/random/dist/maath-random.esm';
+
+function StarBackground(props: React.ComponentProps<typeof Points>) {
+  const ref = useRef<THREE.Points>(null);
+  // Generate 5000 random points in a sphere
+  const sphere = random.inSphere(new Float32Array(5000), { radius: 1.5 });
+
+  useFrame((state, delta) => {
+    if (ref.current) {
+      ref.current.rotation.x -= delta / 10;
+      ref.current.rotation.y -= delta / 15;
+    }
+  });
+
+  return (
+    <group rotation={[0, 0, Math.PI / 4]}>
+      <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
+        <PointMaterial
+          transparent
+          color="#8b5cf6"
+          size={0.002}
+          sizeAttenuation={true}
+          depthWrite={false}
+        />
+      </Points>
+    </group>
+  );
+}
+
+export default function ThreeScene() {
+  return (
+    <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', zIndex: 0, pointerEvents: 'none' }}>
+      <Canvas camera={{ position: [0, 0, 1] }}>
+        <StarBackground />
+        <Preload all />
+      </Canvas>
+    </div>
+  );
+}
