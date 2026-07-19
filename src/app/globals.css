@@ -156,6 +156,7 @@ a:hover {
   
   .section-title {
     font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
 
   .section {
@@ -169,5 +170,30 @@ a:hover {
   .btn {
     padding: 12px 24px;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 60px 4%;
+  }
+
+  .glass-panel {
+    padding: 1.25rem !important;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    width: 100%;
+    text-align: center;
   }
 }
