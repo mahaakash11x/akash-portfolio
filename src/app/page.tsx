@@ -74,7 +74,7 @@ export default function Home() {
           
           <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 600 }}>DailyAstro</h3>
-            <p style={{ color: 'var(--accent-color)', fontSize: '0.9rem' }}>Mobile Astrology Application | React Native, TypeScript, NativeWind</p>
+            <p style={{ fontSize: '0.85rem' }}><strong style={{ color: 'var(--accent-secondary)', fontWeight: 700 }}>Mobile Astrology Application</strong> <span style={{ color: 'var(--text-secondary)' }}>|</span> <span style={{ color: 'var(--accent-color)' }}>React Native, TypeScript, NativeWind</span></p>
             <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'outside', paddingLeft: '1.2rem', lineHeight: '1.6', fontSize: '0.95rem' }}>
               <li>Developed pixel-perfect and responsive mobile UI screens with reusable components.</li>
               <li>Implemented keyboard handling, and frontend UI optimization for improved user experience.</li>
@@ -83,7 +83,7 @@ export default function Home() {
 
           <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 600 }}>Unique Gurukul</h3>
-            <p style={{ color: 'var(--accent-color)', fontSize: '0.9rem' }}>Online Learning Platform | React Native, Next.js, Tailwind CSS, TypeScript</p>
+            <p style={{ fontSize: '0.85rem' }}><strong style={{ color: 'var(--accent-secondary)', fontWeight: 700 }}>Online Learning Platform</strong> <span style={{ color: 'var(--text-secondary)' }}>|</span> <span style={{ color: 'var(--accent-color)' }}>React Native, Next.js, Tailwind CSS, TypeScript</span></p>
             <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'outside', paddingLeft: '1.2rem', lineHeight: '1.6', fontSize: '0.95rem' }}>
               <li>Developed responsive web pages and modern UI layouts based on Figma designs.</li>
               <li>Performed API integration using MockAPI and improved UI consistency, and overall user experience.</li>
@@ -92,7 +92,7 @@ export default function Home() {
 
           <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 600 }}>Doctor App</h3>
-            <p style={{ color: 'var(--accent-color)', fontSize: '0.9rem' }}>Online Doctor Consultation Platform | React.js, Next.js, Tailwind CSS</p>
+            <p style={{ fontSize: '0.85rem' }}><strong style={{ color: 'var(--accent-secondary)', fontWeight: 700 }}>Online Doctor Consultation Platform</strong> <span style={{ color: 'var(--text-secondary)' }}>|</span> <span style={{ color: 'var(--accent-color)' }}>React.js, Next.js, Tailwind CSS</span></p>
             <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'outside', paddingLeft: '1.2rem', lineHeight: '1.6', fontSize: '0.95rem' }}>
               <li>Worked on frontend optimization, UI bug fixing, and modern component styling.</li>
               <li>Implemented pixel-perfect and responsive frontend UI screens for doctor consultation workflows.</li>
@@ -101,7 +101,7 @@ export default function Home() {
 
           <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 600 }}>AllRounder</h3>
-            <p style={{ color: 'var(--accent-color)', fontSize: '0.9rem' }}>Social Media Mobile Application | React Native, TypeScript</p>
+            <p style={{ fontSize: '0.85rem' }}><strong style={{ color: 'var(--accent-secondary)', fontWeight: 700 }}>Social Media Mobile Application</strong> <span style={{ color: 'var(--text-secondary)' }}>|</span> <span style={{ color: 'var(--accent-color)' }}>React Native, TypeScript</span></p>
             <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'outside', paddingLeft: '1.2rem', lineHeight: '1.6', fontSize: '0.95rem' }}>
               <li>Developed responsive social media-style mobile interfaces for photo and video sharing features.</li>
               <li>Implemented interactive UI elements, onPress functionality, and navigation workflows.</li>
@@ -110,7 +110,7 @@ export default function Home() {
 
           <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 600 }}>Biyeco</h3>
-            <p style={{ color: 'var(--accent-color)', fontSize: '0.9rem' }}>Matchmaking Mobile Application | React Native, TypeScript</p>
+            <p style={{ fontSize: '0.85rem' }}><strong style={{ color: 'var(--accent-secondary)', fontWeight: 700 }}>Matchmaking Mobile Application</strong> <span style={{ color: 'var(--text-secondary)' }}>|</span> <span style={{ color: 'var(--accent-color)' }}>React Native, TypeScript</span></p>
             <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'outside', paddingLeft: '1.2rem', lineHeight: '1.6', fontSize: '0.95rem' }}>
               <li>Developed responsive UI screens for matchmaking and profile-based interaction workflows.</li>
               <li>Improved mobile user experience and implemented frontend navigation features.</li>
@@ -154,7 +154,7 @@ export default function Home() {
         <div className="glass-panel" style={{ padding: '3rem', maxWidth: '600px', margin: '0 auto', width: '100%' }}>
           <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '1rem' }}>Get In Touch</h2>
           <div style={{ textAlign: 'center', color: 'var(--text-secondary)', marginBottom: '2rem', lineHeight: '1.8', fontSize: '1.1rem' }}>
-            <p><strong>Email:</strong> debnathakash911@gmail.com</p>
+            <p><strong>Email:</strong> <a href="mailto:debnathakash911@gmail.com" style={{ color: 'var(--accent-color)', textDecoration: 'underline' }}>debnathakash911@gmail.com</a></p>
             <p><strong>Phone:</strong> 7439852652</p>
             <p><strong>Location:</strong> Kolkata-700129, West Bengal, India</p>
             <p style={{ marginTop: '2rem' }}>
