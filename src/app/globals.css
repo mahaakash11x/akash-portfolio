@@ -139,6 +139,14 @@ a:hover {
   -webkit-text-fill-color: transparent;
 }
 
+.contact-section {
+  min-height: auto;
+  /* Change the value below to control the gap ABOVE the contact section */
+  padding-top: 10rem; 
+  /* Change the value below to control the gap BELOW the contact section */
+  padding-bottom: 5.5rem; 
+}
+
 .hero-title {
   font-size: 4.5rem;
   font-weight: 800;
@@ -149,9 +157,75 @@ a:hover {
   line-height: 1.1;
 }
 
+.hero-description {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.exp-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.exp-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.exp-list {
+  color: var(--text-secondary);
+  list-style-position: outside;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.skills-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.skills-list {
+  color: var(--text-secondary);
+  list-style-position: outside;
+  padding-left: 1.2rem;
+  line-height: 1.8;
+}
+
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
+  }
+  
+  .hero-description {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .exp-title {
+    font-size: 1.35rem;
+  }
+  
+  .exp-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .exp-list {
+    font-size: 0.95rem;
+  }
+  
+  .skills-title {
+    font-size: 1.35rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .skills-list {
+    font-size: 0.95rem;
   }
   
   .section-title {
@@ -161,6 +235,13 @@ a:hover {
 
   .section {
     padding: 80px 5%;
+  }
+
+  .contact-section {
+    /* Change below for tablet contact section TOP gap */
+    padding-top: 4rem; 
+    /* Change below for tablet contact section BOTTOM gap */
+    padding-bottom: 4rem;
   }
 
   .glass-panel {
@@ -175,15 +256,54 @@ a:hover {
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .exp-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .exp-subtitle {
+    font-size: 1.0rem;
+    margin-bottom: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .exp-list {
+    font-size: 0.9rem;
+    padding-left: 1.2rem;
+  }
+  
+  .skills-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .skills-list {
+    line-height: 2.1;
+    font-size: 0.9rem;
+    padding-left: 1rem;
   }
   
   .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .section {
     padding: 60px 4%;
+  }
+
+  .contact-section {
+    /* Change below for mobile contact section TOP gap */
+    padding-top: 10rem; 
+    /* Change below for mobile contact section BOTTOM gap */
+    padding-bottom: 10rem;
   }
 
   .glass-panel {

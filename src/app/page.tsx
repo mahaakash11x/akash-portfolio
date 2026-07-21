@@ -1,5 +1,5 @@
 import ThreeScene from '@/components/ThreeScene';
-
+import Image from 'next/image';
 export default function Home() {
   return (
     <main>
@@ -8,10 +8,25 @@ export default function Home() {
       {/* Hero Section */}
       <section className="section" id="home">
         <div className="glass-panel" style={{ padding: '3rem', maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-          <h1 className="hero-title">
+          
+          {/* Profile Picture */}
+          <div style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
+            <div style={{ width: '150px', height: '150px', borderRadius: '50%', overflow: 'hidden', border: '3px solid var(--accent-color)', boxShadow: '0 0 20px var(--accent-glow)' }}>
+              <Image 
+                src="/profile.jpg" 
+                alt="Akash Debnath" 
+                width={150} 
+                height={150} 
+                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                priority
+              />
+            </div>
+          </div>
+
+          <h2 className="hero-title">
             Hi, I&apos;m Akash Debnath
-          </h1>
-          <p style={{ fontSize: '1.25rem', color: 'var(--text-secondary)', marginBottom: '2rem', lineHeight: '1.6' }}>
+          </h2>
+          <p className="hero-description">
             Software Developer with 1+ year of internship experience in React Native, React.js, Next.js, TypeScript, MERN Stack, and SAPUI5. 
             Experienced in developing mobile and web applications, integrating APIs, and building responsive user interfaces.
           </p>
@@ -19,6 +34,13 @@ export default function Home() {
             <a href="#experience" className="btn">Experience</a>
             <a href="#projects" className="btn" style={{ background: 'transparent', border: '1px solid var(--accent-color)' }}>Projects</a>
             <a href="#contact" className="btn" style={{ background: 'transparent', border: '1px solid var(--accent-color)' }}>Contact</a>
+          </div>
+
+          {/* Download CV Button */}
+          <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center' }}>
+            <a href="/Akash_Debnath_CV.pdf" download="Akash_Debnath_CV.pdf" className="btn" style={{ background: 'linear-gradient(135deg, #10b981, #059669)', boxShadow: '0 4px 15px rgba(16, 185, 129, 0.4)' }}>
+              Download My CV
+            </a>
           </div>
         </div>
       </section>
@@ -29,9 +51,9 @@ export default function Home() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', maxWidth: '1000px', margin: '0 auto', width: '100%' }}>
           
           <div className="glass-panel" style={{ padding: '2rem' }}>
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--accent-color)' }}>Software Developer Intern</h3>
-            <h4 style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>Sky IT Solution Pvt Ltd | Jan 2026 - July 2026</h4>
-            <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'outside', paddingLeft: '1.5rem', lineHeight: '1.6' }}>
+            <h3 className="exp-title">Software Developer Intern</h3>
+            <h4 className="exp-subtitle">Sky IT Solution Pvt Ltd | Jan 2026 - July 2026</h4>
+            <ul className="exp-list">
               <li>Developed responsive mobile and web application interfaces using React Native, Next.js and NativeWind.</li>
               <li>Implemented pixel-perfect UI from Figma designs for multiple real-world client projects.</li>
               <li>Built reusable components, handled navigation flow, and integrated basic APIs.</li>
@@ -43,9 +65,9 @@ export default function Home() {
           </div>
 
           <div className="glass-panel" style={{ padding: '2rem' }}>
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--accent-color)' }}>Associate Software Engineer</h3>
-            <h4 style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>PCS Global Pvt.Ltd | July 2025 - Oct 2025</h4>
-            <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'outside', paddingLeft: '1.5rem', lineHeight: '1.6' }}>
+            <h3 className="exp-title">Associate Software Engineer</h3>
+            <h4 className="exp-subtitle">PCS Global Pvt.Ltd | July 2025 - Oct 2025</h4>
+            <ul className="exp-list">
               <li>Worked on MERN stack fundamentals and frontend development tasks.</li>
               <li>Assisted in building React components and basic API integration.</li>
               <li>Gained exposure to MongoDB, Express.js, and team-based development workflow.</li>
@@ -54,9 +76,9 @@ export default function Home() {
           </div>
 
           <div className="glass-panel" style={{ padding: '2rem' }}>
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 600, color: 'var(--accent-color)' }}>SAPUI5 / Fiori Developer Intern</h3>
-            <h4 style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>ERP League | Feb 2025 - Apr 2025</h4>
-            <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'outside', paddingLeft: '1.5rem', lineHeight: '1.6' }}>
+            <h3 className="exp-title">SAPUI5 / Fiori Developer Intern</h3>
+            <h4 className="exp-subtitle">ERP League | Feb 2025 - Apr 2025</h4>
+            <ul className="exp-list">
               <li>Built a Sales Dashboard App with navigation between customer, product, and regional sales views.</li>
               <li>Created a fully functional Employee Management App using the sap.m.Table control and bound to JSON data.</li>
               <li>Integrated JSON and OData models (e.g., Northwind service) for real-time data handling.</li>
@@ -126,8 +148,8 @@ export default function Home() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
           
           <div className="glass-panel" style={{ padding: '2rem' }}>
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '1rem', color: 'var(--accent-color)' }}>Technical Skills</h3>
-            <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'outside', paddingLeft: '1.2rem', lineHeight: '1.8' }}>
+            <h3 className="skills-title">Technical Skills</h3>
+            <ul className="skills-list">
               <li><strong>Mobile & Frontend:</strong> React Native, React.js, Next.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, NativeWind, Bootstrap</li>
               <li><strong>SAP UI/UX:</strong> SAPUI5, SAP Fiori, JSON, MVC architecture, Routing, OData, Debugging</li>
               <li><strong>Programming:</strong> C, C++, Java</li>
@@ -137,9 +159,9 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="glass-panel" style={{ padding: '2rem' }}>
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '1rem', color: 'var(--accent-color)' }}>Educational Qualification</h3>
-            <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'outside', paddingLeft: '1.2rem', lineHeight: '1.8' }}>
+          <div className="glass-panel" style={{ padding: '2rem',marginTop: '5px' }}>
+            <h3 className="skills-title">Educational Qualification</h3>
+            <ul className="skills-list">
               <li><strong>Bachelor of Technology (B.Tech - CSE)</strong><br/>M.A.K.A.U.T, Elitte College of Engineering<br/>2024 | CGPA: 8.27</li>
               <li><strong style={{ marginTop: '0.5rem', display: 'inline-block' }}>Higher Secondary (HSC)</strong><br/>CBSE, Sudhir Memorial Institute<br/>2020 | Percentage: 60%</li>
               <li><strong style={{ marginTop: '0.5rem', display: 'inline-block' }}>Secondary School (SSC)</strong><br/>ICSE, St. Jude&apos;s High School<br/>2018 | Percentage: 70%</li>
@@ -150,7 +172,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="section" id="contact">
+      <section className="section contact-section" id="contact">
         <div className="glass-panel" style={{ padding: '3rem', maxWidth: '600px', margin: '0 auto', width: '100%' }}>
           <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '1rem' }}>Get In Touch</h2>
           <div style={{ textAlign: 'center', color: 'var(--text-secondary)', marginBottom: '2rem', lineHeight: '1.8', fontSize: '1.1rem' }}>
