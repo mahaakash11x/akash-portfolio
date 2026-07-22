@@ -7,16 +7,16 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="section" id="home">
-        <div className="glass-panel" style={{ padding: '3rem', maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+        <div className="glass-panel" style={{ padding: '3rem', maxWidth: '700px', margin: '0 auto', textAlign: 'center' }}>
           
           {/* Profile Picture */}
           <div style={{ marginBottom: '1.5rem', display: 'flex', justifyContent: 'center' }}>
-            <div style={{ width: '150px', height: '150px', borderRadius: '50%', overflow: 'hidden', border: '3px solid var(--accent-color)', boxShadow: '0 0 20px var(--accent-glow)' }}>
+            <div style={{ width: '160px', height: '160px', borderRadius: '50%', overflow: 'hidden', border: '3px solid var(--accent-color)', boxShadow: '0 0 20px var(--accent-glow)' }}>
               <Image 
                 src="/profile.jpg" 
                 alt="Akash Debnath" 
-                width={150} 
-                height={150} 
+                width={160} 
+                height={160} 
                 style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                 priority
               />
@@ -38,7 +38,7 @@ export default function Home() {
 
           {/* Download CV Button */}
           <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center' }}>
-            <a href="/Akash_Debnath_CV.pdf" download="Akash_Debnath_CV.pdf" className="btn" style={{ background: 'linear-gradient(135deg, #10b981, #059669)', boxShadow: '0 4px 15px rgba(16, 185, 129, 0.4)' }}>
+            <a href="/Akash_Debnath_CV.pdf" download="Akash_Debnath_CV.pdf" className="btn btn-cv">
               Download My CV
             </a>
           </div>
@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section className="section" id="projects">
+      <section className="section" id="projects" style={{ justifyContent: 'flex-start', paddingTop: '50px' }}>
         <h2 className="section-title" style={{ textAlign: 'center' }}>Projects</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
           
@@ -113,7 +113,7 @@ export default function Home() {
           </div>
 
           <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 600 }}>Doctor App</h3>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 600 }}>DollarCare</h3>
             <p style={{ fontSize: '0.85rem' }}><strong style={{ color: 'var(--accent-secondary)', fontWeight: 700 }}>Online Doctor Consultation Platform</strong> <span style={{ color: 'var(--text-secondary)' }}>|</span> <span style={{ color: 'var(--accent-color)' }}>React.js, Next.js, Tailwind CSS</span></p>
             <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'outside', paddingLeft: '1.2rem', lineHeight: '1.6', fontSize: '0.95rem' }}>
               <li>Worked on frontend optimization, UI bug fixing, and modern component styling.</li>
@@ -147,22 +147,52 @@ export default function Home() {
         <h2 className="section-title" style={{ textAlign: 'center' }}>Skills & Education</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
           
-          <div className="glass-panel" style={{ padding: '2rem' }}>
+          <div className="glass-panel" style={{ padding: '1.5rem' }}>
             <h3 className="skills-title">Technical Skills</h3>
-            <ul className="skills-list">
-              <li><strong>Mobile & Frontend:</strong> React Native, React.js, Next.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, NativeWind, Bootstrap</li>
-              <li><strong>SAP UI/UX:</strong> SAPUI5, SAP Fiori, JSON, MVC architecture, Routing, OData, Debugging</li>
-              <li><strong>Programming:</strong> C, C++, Java</li>
-              <li><strong>Backend:</strong> Node.js, Express.js, REST API</li>
-              <li><strong>Database:</strong> MYSQL, MongoDB, Prisma</li>
-              <li><strong>Tools & Platforms:</strong> Git, XAMPP, Postman, Android Studio, Android SDK, APK/AAB Build Generation</li>
-            </ul>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+              <div className="skill-category">
+                <strong>Mobile & Frontend</strong>
+                <div className="skill-badge-container">
+                  <span className="skill-badge">React Native</span><span className="skill-badge">React.js</span><span className="skill-badge">Next.js</span><span className="skill-badge">TypeScript</span><span className="skill-badge">JavaScript</span><span className="skill-badge">HTML5</span><span className="skill-badge">CSS3</span><span className="skill-badge">Tailwind CSS</span><span className="skill-badge">NativeWind</span>
+                </div>
+              </div>
+              <div className="skill-category">
+                <strong>SAP UI/UX</strong>
+                <div className="skill-badge-container">
+                  <span className="skill-badge">SAPUI5</span><span className="skill-badge">SAP Fiori</span><span className="skill-badge">JSON</span><span className="skill-badge">MVC architecture</span><span className="skill-badge">Routing</span><span className="skill-badge">OData</span><span className="skill-badge">Debugging</span>
+                </div>
+              </div>
+              <div className="skill-category">
+                <strong>Backend</strong>
+                <div className="skill-badge-container">
+                  <span className="skill-badge">Node.js</span><span className="skill-badge">Express.js</span><span className="skill-badge">REST API</span>
+                </div>
+              </div>
+              <div className="skill-category">
+                <strong>Database</strong>
+                <div className="skill-badge-container">
+                  <span className="skill-badge">MYSQL</span><span className="skill-badge">MongoDB</span><span className="skill-badge">Prisma</span>
+                </div>
+              </div>
+              <div className="skill-category">
+                <strong>Programming</strong>
+                <div className="skill-badge-container">
+                  <span className="skill-badge">C / C++</span><span className="skill-badge">Java</span>
+                </div>
+              </div>
+              <div className="skill-category">
+                <strong>Tools & Platforms</strong>
+                <div className="skill-badge-container">
+                  <span className="skill-badge">Git</span><span className="skill-badge">XAMPP</span><span className="skill-badge">Postman</span><span className="skill-badge">Android Studio</span><span className="skill-badge">Android SDK</span><span className="skill-badge mobile-only-badge">APK/AAB Build Generation</span>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="glass-panel" style={{ padding: '2rem',marginTop: '5px' }}>
-            <h3 className="skills-title">Educational Qualification</h3>
-            <ul className="skills-list">
-              <li><strong>Bachelor of Technology (B.Tech - CSE)</strong><br/>M.A.K.A.U.T, Elitte College of Engineering<br/>2024 | CGPA: 8.27</li>
+          <div className="glass-panel education-panel" style={{ padding: '1.5rem' }}>
+            <h3 className="education-title">Educational Qualification</h3>
+            <ul className="education-list">
+              <li><strong>Bachelor of Technology (B.Tech - CSE)</strong><br/>M.A.K.A.U.T, Elitte College of Engineering<br/>2024 | DGPA: 8.27 | Percentage: 78.50%</li>
               <li><strong style={{ marginTop: '0.5rem', display: 'inline-block' }}>Higher Secondary (HSC)</strong><br/>CBSE, Sudhir Memorial Institute<br/>2020 | Percentage: 60%</li>
               <li><strong style={{ marginTop: '0.5rem', display: 'inline-block' }}>Secondary School (SSC)</strong><br/>ICSE, St. Jude&apos;s High School<br/>2018 | Percentage: 70%</li>
             </ul>
@@ -179,11 +209,14 @@ export default function Home() {
             <p><strong>Email:</strong> <a href="mailto:debnathakash911@gmail.com" style={{ color: 'var(--accent-color)', textDecoration: 'underline' }}>debnathakash911@gmail.com</a></p>
             <p><strong>Phone:</strong> 7439852652</p>
             <p><strong>Location:</strong> Kolkata-700129, West Bengal, India</p>
-            <p style={{ marginTop: '2rem' }}>
-              <a href="https://www.linkedin.com/in/akash-debnath-a94124241" target="_blank" rel="noopener noreferrer" className="btn">
+            <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <a href="https://www.linkedin.com/in/akash-debnath-a94124241" target="_blank" rel="noopener noreferrer" className="btn btn-linkedin">
                 Connect on LinkedIn
               </a>
-            </p>
+              <a href="https://github.com/mahaakash11x" target="_blank" rel="noopener noreferrer" className="btn btn-github">
+                Connect on GitHub
+              </a>
+            </div>
           </div>
         </div>
       </section>

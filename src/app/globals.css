@@ -120,6 +120,44 @@ a:hover {
   opacity: 1;
 }
 
+.btn-cv {
+  background: linear-gradient(135deg, #10b981, #059669);
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+}
+
+.btn-cv::after {
+  background: linear-gradient(135deg, #059669, #10b981);
+}
+
+.btn-cv:hover {
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.6);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.btn-linkedin {
+  background: linear-gradient(135deg, #0a66c2, #00a0dc);
+  box-shadow: 0 4px 15px rgba(10, 102, 194, 0.6);
+}
+.btn-linkedin::after {
+  background: linear-gradient(135deg, #00a0dc, #0a66c2);
+}
+.btn-linkedin:hover {
+  box-shadow: 0 6px 20px rgba(0, 160, 220, 0.5);
+  border-color: rgba(0, 160, 220, 0.3);
+}
+
+.btn-github {
+  background: linear-gradient(135deg, #333333, #000000);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+.btn-github::after {
+  background: linear-gradient(135deg, #555555, #1a1a1a);
+}
+.btn-github:hover {
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
 .section {
   min-height: 100vh;
   padding: 100px 5%;
@@ -148,9 +186,9 @@ a:hover {
 }
 
 .hero-title {
-  font-size: 4.5rem;
+  font-size: 3.9rem;
   font-weight: 800;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.7rem;
   background: linear-gradient(to right, #ffffff, #a855f7, #ec4899);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -160,7 +198,7 @@ a:hover {
 .hero-description {
   font-size: 1.25rem;
   color: var(--text-secondary);
-  margin-bottom: 2rem;
+  margin-bottom: 2.0rem;
   line-height: 1.6;
 }
 
@@ -171,7 +209,7 @@ a:hover {
 }
 
 .exp-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
@@ -182,21 +220,66 @@ a:hover {
   line-height: 1.6;
 }
 
-.skills-title {
+.skills-title, .education-title {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: var(--accent-color);
 }
 
-.skills-list {
+.education-list {
   color: var(--text-secondary);
   list-style-position: outside;
   padding-left: 1.2rem;
-  line-height: 1.8;
+  line-height: 1.89;
+  font-size: 1.0rem;
+}
+.education-list strong {
+  font-size: 1.26rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+
+.skill-category {
+  margin-bottom: 0.8rem;
+}
+.skill-category strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.skill-badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.skill-badge {
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  padding: 0.25rem 0.6rem;
+  border-radius: 15px;
+  font-size: 0.79rem;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+.skill-badge:hover {
+  background: rgba(236, 72, 153, 0.15);
+  border-color: rgba(236, 72, 153, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.2);
+}
+
+.mobile-only-badge {
+  display: none;
 }
 
 @media (max-width: 768px) {
+  .mobile-only-badge {
+    display: inline-block;
+  }
   .hero-title {
     font-size: 2.3rem;
   }
@@ -219,13 +302,18 @@ a:hover {
     font-size: 0.95rem;
   }
   
-  .skills-title {
+  .skills-title, .education-title {
     font-size: 1.35rem;
     margin-bottom: 0.8rem;
   }
   
-  .skills-list {
+  .education-list {
     font-size: 0.95rem;
+  }
+  
+  .education-panel {
+    /* Control the space ABOVE the Education Box on Tablets */
+    margin-top: 30px;
   }
   
   .section-title {
@@ -280,15 +368,33 @@ a:hover {
     padding-left: 1.2rem;
   }
   
-  .skills-title {
+  .skills-title, .education-title {
     font-size: 1.25rem;
     margin-bottom: 0.8rem;
   }
   
-  .skills-list {
-    line-height: 2.1;
-    font-size: 0.9rem;
+  .education-list {
+    line-height: 2.2;
+    font-size: 1.0rem;
     padding-left: 1rem;
+  }
+
+  .education-panel {
+    /* Control the space ABOVE the Education Box on Mobile Phones */
+    margin-top: 20px;
+  }
+  
+  .skill-badge {
+    line-height: 1.7;
+  }
+  
+  .skill-category strong {
+    margin-bottom: 0.8rem;
+    display: flex;
+  }
+
+  .skill-category {
+    margin-bottom: 0.9rem;
   }
   
   .section-title {
@@ -311,9 +417,7 @@ a:hover {
   }
 
   .btn {
-    padding: 10px 20px;
-    font-size: 0.85rem;
-    width: 100%;
-    text-align: center;
+    padding: 8px 20px;
+    font-size: 0.9rem;
   }
 }
