@@ -234,10 +234,14 @@ a:hover {
   line-height: 1.89;
   font-size: 1.0rem;
 }
-.education-list strong {
+.education-degree {
   font-size: 1.26rem;
   font-weight: 600;
   color: var(--text-primary);
+  display: inline;
+}
+.education-list li {
+  margin-bottom: 1rem;
 }
 
 
@@ -374,9 +378,20 @@ a:hover {
   }
   
   .education-list {
-    line-height: 2.2;
+    line-height: 2.1;
     font-size: 1.0rem;
     padding-left: 1rem;
+  }
+
+  .education-degree {
+  font-size: 1.24rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: inline;
+}
+
+  .education-list li {
+    margin-bottom: 0.5rem;
   }
 
   .education-panel {

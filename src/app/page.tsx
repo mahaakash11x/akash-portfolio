@@ -192,9 +192,9 @@ export default function Home() {
           <div className="glass-panel education-panel" style={{ padding: '1.5rem' }}>
             <h3 className="education-title">Educational Qualification</h3>
             <ul className="education-list">
-              <li><strong>Bachelor of Technology (B.Tech - CSE)</strong><br/>M.A.K.A.U.T, Elitte College of Engineering<br/>2024 | DGPA: 8.27 | Percentage: 78.50%</li>
-              <li><strong style={{ marginTop: '0.5rem', display: 'inline-block' }}>Higher Secondary (HSC)</strong><br/>CBSE, Sudhir Memorial Institute<br/>2020 | Percentage: 60%</li>
-              <li><strong style={{ marginTop: '0.5rem', display: 'inline-block' }}>Secondary School (SSC)</strong><br/>ICSE, St. Jude&apos;s High School<br/>2018 | Percentage: 70%</li>
+              <li><strong className="education-degree">Bachelor of Technology (B.Tech - CSE)</strong><br/>M.A.K.A.U.T, Elitte College of Engineering<br/>2024 | DGPA: 8.27 | Percentage: 78.50%</li>
+              <li><strong className="education-degree">Higher Secondary (HSC)</strong><br/>CBSE, Sudhir Memorial Institute<br/>2020 | Percentage: 60%</li>
+              <li><strong className="education-degree">Secondary School (SSC)</strong><br/>ICSE, St. Jude&apos;s High School<br/>2018 | Percentage: 70%</li>
             </ul>
           </div>
 
