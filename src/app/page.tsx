@@ -98,45 +98,70 @@ export default function Home() {
             <h3 style={{ fontSize: '1.5rem', fontWeight: 600 }}>DailyAstro</h3>
             <p style={{ fontSize: '0.85rem' }}><strong style={{ color: 'var(--accent-secondary)', fontWeight: 700 }}>Mobile Astrology Application</strong> <span style={{ color: 'var(--text-secondary)' }}>|</span> <span style={{ color: 'var(--accent-color)' }}>React Native, TypeScript, NativeWind</span></p>
             <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'outside', paddingLeft: '1.2rem', lineHeight: '1.6', fontSize: '0.95rem' }}>
-              <li>Developed pixel-perfect and responsive mobile UI screens with reusable components.</li>
+              <li>Developed 20+ responsive mobile screens from Figma using React Native and NativeWind.</li>
               <li>Implemented keyboard handling, and frontend UI optimization for improved user experience.</li>
             </ul>
+            <div style={{ marginTop: 'auto', paddingTop: '1rem' }}>
+              <a href="https://play.google.com/store/apps/details?id=com.nativewindapp" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-color)', fontSize: '0.9rem', fontWeight: 600, textDecoration: 'none', transition: 'color 0.3s ease' }}>
+                View on Play Store <span style={{ fontSize: '1.2rem' }}>↗</span>
+              </a>
+            </div>
           </div>
 
           <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 600 }}>Unique Gurukul</h3>
             <p style={{ fontSize: '0.85rem' }}><strong style={{ color: 'var(--accent-secondary)', fontWeight: 700 }}>Online Learning Platform</strong> <span style={{ color: 'var(--text-secondary)' }}>|</span> <span style={{ color: 'var(--accent-color)' }}>React Native, Next.js, Tailwind CSS, TypeScript</span></p>
             <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'outside', paddingLeft: '1.2rem', lineHeight: '1.6', fontSize: '0.95rem' }}>
-              <li>Developed responsive web pages and modern UI layouts based on Figma designs.</li>
+              <li>Converted Figma designs into responsive web pages using Next.js and Tailwind CSS.</li>
               <li>Performed API integration using MockAPI and improved UI consistency, and overall user experience.</li>
             </ul>
+            <div style={{ marginTop: 'auto', paddingTop: '1rem' }}>
+              <a href="https://uniquegurukul.app/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-color)', fontSize: '0.9rem', fontWeight: 600, textDecoration: 'none', transition: 'color 0.3s ease' }}>
+                Visit Website <span style={{ fontSize: '1.2rem' }}>↗</span>
+              </a>
+            </div>
           </div>
 
           <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 600 }}>DollarCare</h3>
             <p style={{ fontSize: '0.85rem' }}><strong style={{ color: 'var(--accent-secondary)', fontWeight: 700 }}>Online Doctor Consultation Platform</strong> <span style={{ color: 'var(--text-secondary)' }}>|</span> <span style={{ color: 'var(--accent-color)' }}>React.js, Next.js, Tailwind CSS</span></p>
             <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'outside', paddingLeft: '1.2rem', lineHeight: '1.6', fontSize: '0.95rem' }}>
-              <li>Worked on frontend optimization, UI bug fixing, and modern component styling.</li>
-              <li>Implemented pixel-perfect and responsive frontend UI screens for doctor consultation workflows.</li>
+              <li>Developed appointment and authentication screens with pixel-perfect UI implementation.</li>
+              <li>Resolved frontend bugs and optimized reusable components for better performance.</li>
             </ul>
+            <div style={{ marginTop: 'auto', paddingTop: '1rem' }}>
+              <a href="https://dollarcare.org/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-color)', fontSize: '0.9rem', fontWeight: 600, textDecoration: 'none', transition: 'color 0.3s ease' }}>
+                Visit Website <span style={{ fontSize: '1.2rem' }}>↗</span>
+              </a>
+            </div>
           </div>
 
           <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 600 }}>AllRounder</h3>
             <p style={{ fontSize: '0.85rem' }}><strong style={{ color: 'var(--accent-secondary)', fontWeight: 700 }}>Social Media Mobile Application</strong> <span style={{ color: 'var(--text-secondary)' }}>|</span> <span style={{ color: 'var(--accent-color)' }}>React Native, TypeScript</span></p>
             <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'outside', paddingLeft: '1.2rem', lineHeight: '1.6', fontSize: '0.95rem' }}>
-              <li>Developed responsive social media-style mobile interfaces for photo and video sharing features.</li>
-              <li>Implemented interactive UI elements, onPress functionality, and navigation workflows.</li>
+              <li>Developed responsive social media mobile screens for photo and video sharing features.</li>
+              <li> Implemented reusable UI components, navigation workflows, and interactive user interactions.</li>
             </ul>
+            <div style={{ marginTop: 'auto', paddingTop: '1rem' }}>
+              <a href="https://play.google.com/store/apps/details?id=com.Allrounder.App" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-color)', fontSize: '0.9rem', fontWeight: 600, textDecoration: 'none', transition: 'color 0.3s ease' }}>
+                View on Play Store <span style={{ fontSize: '1.2rem' }}>↗</span>
+              </a>
+            </div>
           </div>
 
           <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 600 }}>Biyeco</h3>
             <p style={{ fontSize: '0.85rem' }}><strong style={{ color: 'var(--accent-secondary)', fontWeight: 700 }}>Matchmaking Mobile Application</strong> <span style={{ color: 'var(--text-secondary)' }}>|</span> <span style={{ color: 'var(--accent-color)' }}>React Native, TypeScript</span></p>
             <ul style={{ color: 'var(--text-secondary)', listStylePosition: 'outside', paddingLeft: '1.2rem', lineHeight: '1.6', fontSize: '0.95rem' }}>
-              <li>Developed responsive UI screens for matchmaking and profile-based interaction workflows.</li>
-              <li>Improved mobile user experience and implemented frontend navigation features.</li>
+              <li>Designed profile and matchmaking interfaces with responsive mobile layouts.</li>
+              <li>Enhanced frontend usability through intuitive navigation and reusable components.</li>
             </ul>
+            <div style={{ marginTop: 'auto', paddingTop: '1rem' }}>
+              <a href="https://www.biyeco.com/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-color)', fontSize: '0.9rem', fontWeight: 600, textDecoration: 'none', transition: 'color 0.3s ease' }}>
+                View on Play Store <span style={{ fontSize: '1.2rem' }}>↗</span>
+              </a>
+            </div>
           </div>
 
         </div>
