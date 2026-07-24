@@ -27,8 +27,8 @@ export default function Home() {
             Hi, I&apos;m Akash Debnath
           </h2>
           <p className="hero-description">
-            Software Developer with 1+ year of internship experience in React Native, React.js, Next.js, TypeScript, MERN Stack, and SAPUI5. 
-            Experienced in developing mobile and web applications, integrating APIs, and building responsive user interfaces.
+            Software Developer with 1 year of internship experience in React Native, React.js, Next.js, MERN Stack, and SAPUI5. 
+            Experienced in developing mobile and web applications, integrating REST APIs, and building responsive user interfaces.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="#experience" className="btn">Experience</a>
