@@ -38,7 +38,7 @@ export default function Home() {
 
           {/* Download CV Button */}
           <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center' }}>
-            <a href="/Akash_Debnath_CV.pdf" download="Akash_Debnath_CV.pdf" className="btn btn-cv">
+            <a href="/Akash_Debnath_Resume.pdf" download="Akash_Debnath_Resume.pdf" className="btn btn-cv">
               Download My CV
             </a>
           </div>
