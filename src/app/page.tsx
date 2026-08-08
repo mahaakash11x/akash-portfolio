@@ -57,7 +57,7 @@ export default function Home() {
               <li>Developed responsive mobile and web application interfaces using React Native, Next.js and NativeWind.</li>
               <li>Implemented pixel-perfect UI from Figma designs for multiple real-world client projects.</li>
               <li>Built reusable components, handled navigation flow, and integrated basic APIs.</li>
-              <li>Worked on projects including Doc-App, Biye.co, AllRounder, DailyAstro and UniqueGurukul.</li>
+              <li>Worked on projects including <strong>DollarCare, Biye.co, AllRounder, DailyAstro and UniqueGurukul.</strong></li>
               <li>Improved frontend responsiveness and user experience across Android and web platforms.</li>
               <li>Collaborated with team members using Git/GitHub and project workflow management.</li>
               <li>Participated in manual QA testing, frontend bug fixing, Android APK build generation, and UI optimization.</li>
