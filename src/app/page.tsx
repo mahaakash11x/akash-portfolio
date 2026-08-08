@@ -196,7 +196,7 @@ export default function Home() {
               <div className="skill-category">
                 <strong>Database</strong>
                 <div className="skill-badge-container">
-                  <span className="skill-badge">MYSQL</span><span className="skill-badge">MongoDB</span><span className="skill-badge">Prisma</span>
+                  <span className="skill-badge">MYSQL</span><span className="skill-badge">MongoDB</span>
                 </div>
               </div>
               <div className="skill-category">
