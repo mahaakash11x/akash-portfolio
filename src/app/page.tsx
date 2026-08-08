@@ -158,7 +158,7 @@ export default function Home() {
               <li>Enhanced frontend usability through intuitive navigation and reusable components.</li>
             </ul>
             <div style={{ marginTop: 'auto', paddingTop: '1rem' }}>
-              <a href="https://www.biyeco.com/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-color)', fontSize: '0.9rem', fontWeight: 600, textDecoration: 'none', transition: 'color 0.3s ease' }}>
+              <a href="https://play.google.com/store/apps/details?id=com.biyeco" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-color)', fontSize: '0.9rem', fontWeight: 600, textDecoration: 'none', transition: 'color 0.3s ease' }}>
                 View on Play Store <span style={{ fontSize: '1.2rem' }}>↗</span>
               </a>
             </div>
@@ -208,7 +208,7 @@ export default function Home() {
               <div className="skill-category">
                 <strong>Tools & Platforms</strong>
                 <div className="skill-badge-container">
-                  <span className="skill-badge">Git</span><span className="skill-badge">XAMPP</span><span className="skill-badge">Postman</span><span className="skill-badge">Android Studio</span><span className="skill-badge">Android SDK</span><span className="skill-badge mobile-only-badge">APK/AAB Build Generation</span>
+                  <span className="skill-badge">Git / GitHub</span><span className="skill-badge">XAMPP</span><span className="skill-badge">Postman</span><span className="skill-badge">Android Studio</span><span className="skill-badge">Android SDK</span><span className="skill-badge mobile-only-badge">APK/AAB Build Generation</span>
                 </div>
               </div>
             </div>
